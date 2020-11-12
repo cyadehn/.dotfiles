@@ -1,190 +1,38 @@
 /Users/christopherdehner/.vim/bundle
 ├── ack.vim
-│   ├── LICENSE
-│   ├── README.md
-│   ├── autoload
-│   ├── doc
-│   ├── ftplugin
-│   └── plugin
 ├── auto-pairs
-│   ├── README.md
-│   ├── doc
-│   └── plugin
 ├── ctrlp.vim
-│   ├── autoload
-│   ├── doc
-│   ├── plugin
-│   └── readme.md
 ├── gruvbox
-│   ├── CHANGELOG.md
-│   ├── README.md
-│   ├── autoload
-│   ├── colors
-│   ├── gruvbox_256palette.sh
-│   ├── gruvbox_256palette_osx.sh
-│   └── package.json
 ├── nerdcommenter
-│   ├── CHANGELOG.md
-│   ├── LICENSE
-│   ├── README.md
-│   ├── doc
-│   └── plugin
 ├── nerdtree
-│   ├── CHANGELOG.md
-│   ├── LICENCE
-│   ├── README.markdown
-│   ├── _config.yml
-│   ├── autoload
-│   ├── doc
-│   ├── lib
-│   ├── nerdtree_plugin
-│   ├── plugin
-│   ├── screenshot.png
-│   ├── syntax
-│   └── tags
 ├── surround
-│   ├── README.markdown
-│   ├── doc
-│   └── plugin
 ├── syntastic
-│   ├── CONTRIBUTING.md
-│   ├── LICENCE
-│   ├── README.markdown
-│   ├── _assets
-│   ├── autoload
-│   ├── doc
-│   ├── plugin
-│   └── syntax_checkers
 ├── tags
 ├── tlib_vim
-│   ├── CHANGES.TXT
-│   ├── LICENSE.TXT
-│   ├── README
-│   ├── addon-info.json
-│   ├── autoload
-│   ├── doc
-│   ├── etc
-│   ├── macros
-│   ├── plugin
-│   ├── samples
-│   ├── scripts
-│   ├── spec
-│   └── test
 ├── vim-addon-mw-utils
-│   ├── autoload
-│   ├── doc
-│   └── vim-addon-mw-utils-addon-info.txt
 ├── vim-airline
-│   ├── CHANGELOG.md
-│   ├── CONTRIBUTING.md
-│   ├── Gemfile
-│   ├── LICENSE
-│   ├── README.md
-│   ├── Rakefile
-│   ├── autoload
-│   ├── doc
-│   ├── plugin
-│   └── t
 ├── vim-airline-themes
-│   ├── LICENSE
-│   ├── README.md
-│   ├── autoload
-│   ├── doc
-│   ├── plugin
-│   └── test
 ├── vim-colors-solarized
-│   ├── README.mkd
-│   ├── autoload
-│   ├── bitmaps
-│   ├── colors
-│   └── doc
 ├── vim-dispatch
-│   ├── CONTRIBUTING.markdown
-│   ├── README.markdown
-│   ├── autoload
-│   ├── doc
-│   └── plugin
 ├── vim-indent-guides
-│   ├── README.markdown
-│   ├── autoload
-│   ├── doc
-│   ├── plugin
-│   └── test-files
 ├── vim-snipmate
-│   ├── Contributors.md
-│   ├── README.md
-│   ├── addon-info.json
-│   ├── after
-│   ├── autoload
-│   ├── doc
-│   ├── ftplugin
-│   ├── indent
-│   ├── plugin
-│   ├── syntax
-│   └── t
 └── vim-snippets
-    ├── AUTHORS
-    ├── LICENSE
-    ├── README.md
-    ├── UltiSnips
-    ├── addon-info.json
-    ├── autoload
-    ├── plugin
-    ├── pythonx
-    ├── snippets
-    └── tests.sh
 
-86 directories, 48 files
+17 directories, 1 file
 /Users/christopherdehner/.vim/colors
 ├── PaperColor.vim
 └── gruvbox
-    ├── CHANGELOG.md
-    ├── README.md
-    ├── autoload
-    ├── colors
-    ├── gruvbox_256palette.sh
-    ├── gruvbox_256palette_osx.sh
-    └── package.json
 
-3 directories, 6 files
+1 directory, 1 file
 /Users/christopherdehner/.vim/plugin
 └── ipmotion
 
 0 directories, 1 file
 /Users/christopherdehner/.vim/plugged
 ├── coc.nvim
-│   ├── LICENSE.md
-│   ├── Readme.md
-│   ├── autoload
-│   ├── build
-│   ├── data
-│   ├── doc
-│   ├── history.md
-│   ├── package.json
-│   ├── plugin
-│   └── terminateProcess.sh
 └── vim-polyglot
-    ├── Makefile
-    ├── README.md
-    ├── after
-    ├── autoload
-    ├── compiler
-    ├── ctags
-    ├── doc
-    ├── extras
-    ├── filetype.vim
-    ├── ftdetect
-    ├── ftoff.vim
-    ├── ftplugin
-    ├── heuristics.yaml
-    ├── indent
-    ├── packages.yaml
-    ├── plugin
-    ├── scripts
-    ├── syntax
-    └── tests
 
-20 directories, 11 files
+2 directories, 0 files
 /Users/christopherdehner/.vim/autoload
 └── pathogen.vim
 
