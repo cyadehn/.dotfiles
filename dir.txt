@@ -1,166 +1,191 @@
-.
-├── abbrev.vim
-├── autoload
-│   └── pathogen.vim
-├── backups
-│   ├── %Users%christopherdehner%.bash_commands
-│   ├── %Users%christopherdehner%.bash_profile
-│   ├── %Users%christopherdehner%.bashrc
-│   ├── %Users%christopherdehner%.nb%home%pokemoncli.md
-│   ├── %Users%christopherdehner%.tmux.conf
-│   ├── %Users%christopherdehner%.vim%.gitignore
-│   ├── %Users%christopherdehner%.vim%coc-settings.json
-│   ├── %Users%christopherdehner%.vim%ftplugin%cs%cs.vim
-│   ├── %Users%christopherdehner%.vim%ftplugin%cs.vim
-│   ├── %Users%christopherdehner%.vim%functions.vim
-│   ├── %Users%christopherdehner%.vim%mapping.vim
-│   ├── %Users%christopherdehner%.vim%plugin%.gitkeep
-│   ├── %Users%christopherdehner%.vim%plugin%ipmotion.vim
-│   ├── %Users%christopherdehner%.vim%plugins.vim
-│   ├── %Users%christopherdehner%.vim%syntax%cs.vim
-│   ├── %Users%christopherdehner%.vim%syntax%csharp.vim
-│   ├── %Users%christopherdehner%.vimrc
-│   ├── %Users%christopherdehner%.zprezto%runcoms%zshrc
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%.git%addp-hunk-edit.diff
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%.gitignore
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokeAPIClient%PokeAPIClient%ItemRepository.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokeAPIClient%PokeAPIClient%LocationRepository.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokeAPIClient%PokeAPIClient%PokeAPI.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokeAPIClient%PokeAPIClient%PokeAPIClient.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokeAPIClient%PokeAPIClient%PokeAPIClient.csproj
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokeAPIClient%PokeAPIClient%PokeRepository.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokeAPIClient%PokeAPIClient%PokedexIndexResponse.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokeAPIClient%PokeAPIClient%Pokemon.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokeAPIClient%PokeAPIClient.Tests%Generators%GameStateGenerator.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokeAPIClient%PokeAPIClient.Tests%PokeRepositoryTests.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokeGUI%Program.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokeGUI%ditto.txt
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokeGUI%title.txt
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%Character.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%Cutscene.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%Game.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%NonPlayerCharacter.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%PlayerCharacter.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%Pokemon.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%PokemonCLI.csproj
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%Program.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%SaveData.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%SavedGame.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%State.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%Tools.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%cutscene-scripts%introDialogue.txt
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%dialogue%ToolsTest.txt
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%dialogue%introDialogue.json
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%dialogue%introDialogue.txt
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI.Tests%CharacterTests.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI.Tests%GameTests.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI.Tests%Generators%GameStateGenerator.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI.Tests%Mocks%CharacterMocks.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI.Tests%Mocks%GameMocks.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI.Tests%StateTests.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI.Tests%ToolsTests.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-app%PokemonCLI%testGUI%Program.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-client%PokemonCLI%PokemonCLI%Cutscene.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-client%PokemonCLI%PokemonCLI%Dialogue.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-client%PokemonCLI%PokemonCLI%ICutscene.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-client%PokemonCLI%PokemonCLI%ISceneAction.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%pokeapi-client%README.md
-│   ├── %Users%christopherdehner%Code%projects%dotnet%shirleys_creations%ProductManager.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%shirleys_creations%Program.cs
-│   ├── %Users%christopherdehner%Code%projects%dotnet%shirleys_creations%UserInterface.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%generics-demo%GenericsDemo%EnumerableCompositor.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%generics-demo%GenericsDemo%Program.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%generics-demo%GenericsDemo%Utils.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%morse-code-trx%MorseCodeTranslator%Program.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%pokeapi-app%.gitignore
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%pokeapi-app%PokeAPIClient%PokeAPIClient.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%pokeapi-app%PokemonCLI%Character.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%pokeapi-app%PokemonCLI%Game.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%pokeapi-app%PokemonCLI%PlayerData.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%pokeapi-app%PokemonCLI%PokeAPIClient.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%Character.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%Cutscene.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%Game.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%Mocks%CharacterMocks.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%Program.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%State.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI%Tools.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI.Tests%CharacterTests.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%pokeapi-app%PokemonCLI%PokemonCLI.Tests%GameTests.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%pokeapi-app%PokemonCLI%Program.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%pokeapi-app%PokemonCLI%SaveData.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%pokeapi-app%PokemonCLI%State.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%pokeapi-app%PokemonCLI%Tools.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%pokeapi-app%PokemonCLI%dialogue%introDialogue.txt
-│   ├── %Users%christopherdehner%code_louisville%projects%dotnet%tandem-challenge%TandemFor400%Program.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%.gitignore
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Abstract-Armed-Invader.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Abstract-Invader.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Core-Exceptions.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Core-Game.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Core-Level.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Core-Map.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Core-MapLocation.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Core-Path.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Core-Point.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Exceptions.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Game.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%IInvader.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Invader-Abstract.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Invader-Armed-Basic.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Invader-Armed-Strong.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Invader-Basic.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Invader-Fast.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Invader-Resurrecting.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Invader-Shielded.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Invaders.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Map.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Tower-Base.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Tower-Sniper.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Tower-Strong.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%Tower.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%temp%unit-testing-using-dotnet-test%PrimeService%PrimeService.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense%temp%unit-testing-using-dotnet-test%PrimeService.Tests%PrimeService_IsPrimeShould.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense.Tests%Mocks%InvaderMock.cs
-│   ├── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense.Tests%PathTests.cs
-│   └── %Users%christopherdehner%code_louisville%projects%treehouse%c#%treehouse-defense%TreehouseDefense.Tests%PointTests.cs
-├── bundle
-│   ├── ack.vim
-│   ├── auto-pairs
-│   ├── ctrlp.vim
-│   ├── gruvbox
-│   ├── nerdcommenter
-│   ├── nerdtree
-│   ├── surround
-│   ├── syntastic
-│   ├── tags
-│   ├── tlib_vim
-│   ├── vim-addon-mw-utils
-│   ├── vim-airline
-│   ├── vim-airline-themes
-│   ├── vim-colors-solarized
-│   ├── vim-dispatch
-│   ├── vim-indent-guides
-│   ├── vim-snipmate
-│   └── vim-snippets
-├── coc-settings.json
-├── colors
-│   ├── PaperColor.vim
-│   └── gruvbox
-├── dir.txt
-├── ftplugin
-│   └── cs
-├── functions.vim
-├── init.vim
-├── mapping.vim
-├── plugged
-│   ├── coc.nvim
-│   └── vim-polyglot
-├── plugin
-│   └── ipmotion
-├── plugins.vim
-├── syntax
-│   └── cs.vim
-└── tags
+/Users/christopherdehner/.vim/bundle
+├── ack.vim
+│   ├── LICENSE
+│   ├── README.md
+│   ├── autoload
+│   ├── doc
+│   ├── ftplugin
+│   └── plugin
+├── auto-pairs
+│   ├── README.md
+│   ├── doc
+│   └── plugin
+├── ctrlp.vim
+│   ├── autoload
+│   ├── doc
+│   ├── plugin
+│   └── readme.md
+├── gruvbox
+│   ├── CHANGELOG.md
+│   ├── README.md
+│   ├── autoload
+│   ├── colors
+│   ├── gruvbox_256palette.sh
+│   ├── gruvbox_256palette_osx.sh
+│   └── package.json
+├── nerdcommenter
+│   ├── CHANGELOG.md
+│   ├── LICENSE
+│   ├── README.md
+│   ├── doc
+│   └── plugin
+├── nerdtree
+│   ├── CHANGELOG.md
+│   ├── LICENCE
+│   ├── README.markdown
+│   ├── _config.yml
+│   ├── autoload
+│   ├── doc
+│   ├── lib
+│   ├── nerdtree_plugin
+│   ├── plugin
+│   ├── screenshot.png
+│   ├── syntax
+│   └── tags
+├── surround
+│   ├── README.markdown
+│   ├── doc
+│   └── plugin
+├── syntastic
+│   ├── CONTRIBUTING.md
+│   ├── LICENCE
+│   ├── README.markdown
+│   ├── _assets
+│   ├── autoload
+│   ├── doc
+│   ├── plugin
+│   └── syntax_checkers
+├── tags
+├── tlib_vim
+│   ├── CHANGES.TXT
+│   ├── LICENSE.TXT
+│   ├── README
+│   ├── addon-info.json
+│   ├── autoload
+│   ├── doc
+│   ├── etc
+│   ├── macros
+│   ├── plugin
+│   ├── samples
+│   ├── scripts
+│   ├── spec
+│   └── test
+├── vim-addon-mw-utils
+│   ├── autoload
+│   ├── doc
+│   └── vim-addon-mw-utils-addon-info.txt
+├── vim-airline
+│   ├── CHANGELOG.md
+│   ├── CONTRIBUTING.md
+│   ├── Gemfile
+│   ├── LICENSE
+│   ├── README.md
+│   ├── Rakefile
+│   ├── autoload
+│   ├── doc
+│   ├── plugin
+│   └── t
+├── vim-airline-themes
+│   ├── LICENSE
+│   ├── README.md
+│   ├── autoload
+│   ├── doc
+│   ├── plugin
+│   └── test
+├── vim-colors-solarized
+│   ├── README.mkd
+│   ├── autoload
+│   ├── bitmaps
+│   ├── colors
+│   └── doc
+├── vim-dispatch
+│   ├── CONTRIBUTING.markdown
+│   ├── README.markdown
+│   ├── autoload
+│   ├── doc
+│   └── plugin
+├── vim-indent-guides
+│   ├── README.markdown
+│   ├── autoload
+│   ├── doc
+│   ├── plugin
+│   └── test-files
+├── vim-snipmate
+│   ├── Contributors.md
+│   ├── README.md
+│   ├── addon-info.json
+│   ├── after
+│   ├── autoload
+│   ├── doc
+│   ├── ftplugin
+│   ├── indent
+│   ├── plugin
+│   ├── syntax
+│   └── t
+└── vim-snippets
+    ├── AUTHORS
+    ├── LICENSE
+    ├── README.md
+    ├── UltiSnips
+    ├── addon-info.json
+    ├── autoload
+    ├── plugin
+    ├── pythonx
+    ├── snippets
+    └── tests.sh
 
-29 directories, 134 files
+86 directories, 48 files
+/Users/christopherdehner/.vim/colors
+├── PaperColor.vim
+└── gruvbox
+    ├── CHANGELOG.md
+    ├── README.md
+    ├── autoload
+    ├── colors
+    ├── gruvbox_256palette.sh
+    ├── gruvbox_256palette_osx.sh
+    └── package.json
+
+3 directories, 6 files
+/Users/christopherdehner/.vim/plugin
+└── ipmotion
+
+0 directories, 1 file
+/Users/christopherdehner/.vim/plugged
+├── coc.nvim
+│   ├── LICENSE.md
+│   ├── Readme.md
+│   ├── autoload
+│   ├── build
+│   ├── data
+│   ├── doc
+│   ├── history.md
+│   ├── package.json
+│   ├── plugin
+│   └── terminateProcess.sh
+└── vim-polyglot
+    ├── Makefile
+    ├── README.md
+    ├── after
+    ├── autoload
+    ├── compiler
+    ├── ctags
+    ├── doc
+    ├── extras
+    ├── filetype.vim
+    ├── ftdetect
+    ├── ftoff.vim
+    ├── ftplugin
+    ├── heuristics.yaml
+    ├── indent
+    ├── packages.yaml
+    ├── plugin
+    ├── scripts
+    ├── syntax
+    └── tests
+
+20 directories, 11 files
+/Users/christopherdehner/.vim/autoload
+└── pathogen.vim
+
+0 directories, 1 file
