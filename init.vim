@@ -332,7 +332,7 @@
     " ┌─────────────────────────┐
     " │     source .vimfiles    │
     " └─────────────────────────┘
-        source ~/.vim/plugins.vim
+        source ~/.vim/plugin-settings.vim
         source ~/.vim/mapping.vim
         source ~/.vim/functions.vim
         source ~/.vim/abbrev.vim
@@ -350,10 +350,12 @@
         set foldcolumn=4
         set foldlevel=1
         "set foldclose=hor
+        " Open splits on the right and below
+        set splitbelow
+        set splitright
     " ┌─────────────────────────┐
     " │   appearance settings   │
     " └─────────────────────────┘
-        set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h15
         " Powerline settings
         let g:airline_theme='papercolor'
         let g:airline_powerline_fonts = 1
@@ -370,3 +372,4 @@
         autocmd VimEnter * hi CursorColumn cterm=NONE ctermbg=darkgrey guibg=Grey7 
         "autocmd VimEnter hi CursorLine term=bold cterm=bold guibg=Grey40
         set cursorline
+        set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h15
