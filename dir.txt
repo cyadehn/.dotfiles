@@ -2,6 +2,7 @@
 ├── ack.vim
 ├── auto-pairs
 ├── ctrlp.vim
+├── fugitive
 ├── gruvbox
 ├── nerdcommenter
 ├── nerdtree
@@ -18,7 +19,7 @@
 ├── vim-snipmate
 └── vim-snippets
 
-17 directories, 1 file
+18 directories, 1 file
 /Users/christopherdehner/.vim/colors
 ├── PaperColor.vim
 └── gruvbox
