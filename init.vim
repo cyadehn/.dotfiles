@@ -13,7 +13,6 @@
         syntax on
         set showmatch
         hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
-        hi MatchParen guibg=none guifg = magenta
     " ┌─────────────────────────┐
     " │ Must-haves              │
         " Allow buffers to switch without write, confirm on close 
