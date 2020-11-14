@@ -93,8 +93,8 @@
         set tabstop=2
         set expandtab
         " Auto indent pasted text
-        nnoremap p p=`]<C-o>
-        nnoremap P P=`]<C-o>
+        "nnoremap p p=`]<C-o>
+        "nnoremap P P=`]<C-o>
         " Indentation settings for using 4 spaces instead of tabs.
         " Do not change 'tabstop' from its default value of 8 with this setup.
         "set shiftwidth=4
