@@ -21,6 +21,8 @@
                 elseif lastLine =~ '.*{.*'
                     if nextLine =~ '.*};.*'
                         return "="
+                    elseif thisLine =~ '.*;.*'
+                        return "="
                     else
                         return "a1"
                     endif
