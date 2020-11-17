@@ -12,11 +12,13 @@
             let lastLine = getline(v:lnum - 1)
 
             if match(thisLine, '^\s*$') >=0
-                return "-1"
+                return "="
             endif
             " Match closing brackets
             if thisLine =~ '.*{.*}.*'
                 if lastLine =~ '.*{.*},.*'
+                    return "="
+                elseif thisLine =~ '.*$.*{.*}.*'
                     return "="
                 elseif lastLine =~ '.*{.*'
                     if nextLine =~ '.*};.*'
@@ -27,6 +29,9 @@
                         return "a1"
                     endif
                 endif
+            endif
+            if lastLine =~ '.*$.*{.*}.*'
+                return "="
             endif
             if thisLine =~ '.*}.*'
                 if lastLine =~ '.*{.*}.*'
