@@ -1,8 +1,6 @@
 /Users/christopherdehner/.vim/bundle
-├── ack.vim
 ├── auto-pairs
 ├── ctrlp.vim
-├── fugitive
 ├── gruvbox
 ├── nerdcommenter
 ├── nerdtree
@@ -19,7 +17,7 @@
 ├── vim-snipmate
 └── vim-snippets
 
-18 directories, 1 file
+16 directories, 1 file
 /Users/christopherdehner/.vim/colors
 ├── PaperColor.vim
 └── gruvbox
@@ -30,10 +28,9 @@
 
 0 directories, 1 file
 /Users/christopherdehner/.vim/plugged
-├── coc.nvim
 └── vim-polyglot
 
-2 directories, 0 files
+1 directory, 0 files
 /Users/christopherdehner/.vim/autoload
 └── pathogen.vim
 

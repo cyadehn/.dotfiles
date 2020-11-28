@@ -15,9 +15,10 @@
         " │          Plug           │
         " └─────────────────────────┘
             call plug#begin()
-                Plug 'neoclide/coc.nvim', {'branch': 'release'}
+                Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
                 Plug 'sheerun/vim-polyglot'
                 "Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+                "Plug 'OmniSharp/omnisharp-vim'
             call plug#end()
     " ┌─────────────────────────┐
     " │     Plugin Settings     │
