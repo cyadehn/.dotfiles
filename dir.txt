@@ -28,9 +28,21 @@
 
 0 directories, 1 file
 /Users/christopherdehner/.vim/plugged
-└── vim-polyglot
+├── auto-pairs
+├── coc.nvim
+├── gruvbox
+├── nerdcommenter
+├── nerdtree
+├── syntastic
+├── vim-airline
+├── vim-airline-themes
+├── vim-colors-solarized
+├── vim-dispatch
+├── vim-indent-guides
+├── vim-polyglot
+└── vim-surround
 
-1 directory, 0 files
+13 directories, 0 files
 /Users/christopherdehner/.vim/autoload
 └── pathogen.vim
 
