@@ -218,7 +218,7 @@
         set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h15
         " Theme settings
         set t_Co=256
-        set background=dark
+        set background=light
         highlight Folded ctermbg=White ctermfg=Red
         autocmd VimEnter * let g:gruvbox_italic = '1'
         autocmd VimEnter * ++nested colorscheme gruvbox
