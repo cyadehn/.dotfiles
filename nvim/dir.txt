@@ -1,0 +1,30 @@
+/Users/christopherdehner/.vim/bundle [error opening dir]
+
+0 directories, 0 files
+/Users/christopherdehner/.vim/colors
+├── PaperColor.vim
+└── gruvbox
+
+1 directory, 1 file
+/Users/christopherdehner/.vim/plugin [error opening dir]
+
+0 directories, 0 files
+/Users/christopherdehner/.vim/plugged
+├── auto-pairs
+├── coc.nvim
+├── gruvbox
+├── nerdcommenter
+├── nerdtree
+├── syntastic
+├── vim-airline
+├── vim-airline-themes
+├── vim-colors-solarized
+├── vim-dispatch
+├── vim-indent-guides
+├── vim-polyglot
+└── vim-surround
+
+13 directories, 0 files
+/Users/christopherdehner/.vim/autoload [error opening dir]
+
+0 directories, 0 files
