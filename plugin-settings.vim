@@ -9,14 +9,25 @@
         " ┌─────────────────────────┐
         " │        Pathogen         │
         " └─────────────────────────┘
-            execute pathogen#infect()
-            call pathogen#helptags()
+            "execute pathogen#infect()
+            "call pathogen#helptags()
         " ┌─────────────────────────┐
         " │          Plug           │
         " └─────────────────────────┘
             call plug#begin()
                 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
                 Plug 'sheerun/vim-polyglot'
+                Plug 'jiangmiao/auto-pairs'
+                Plug 'morhetz/gruvbox'
+                Plug 'preservim/nerdcommenter'
+                Plug 'scrooloose/nerdtree'
+                Plug 'tpope/vim-surround'
+                Plug 'scrooloose/syntastic'
+                Plug 'nathanaelkane/vim-indent-guides'
+                Plug 'tpope/vim-dispatch'
+                Plug 'vim-airline/vim-airline'
+                Plug 'vim-airline/vim-airline-themes'
+                Plug 'altercation/vim-colors-solarized'
                 "Plug 'mg979/vim-visual-multi', {'branch': 'master'}
                 "Plug 'OmniSharp/omnisharp-vim'
             call plug#end()
