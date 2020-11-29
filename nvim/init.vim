@@ -190,10 +190,10 @@
 " Cyadehn Dotfile Settings https://github.com/victormours/dotfiles/blob/master/vim/vimrc
     " ┌─────────────────────────┐
     " │ source .vimfiles        │
-        source ~/.vim/plugin-settings.vim
-        source ~/.vim/mapping.vim
-        source ~/.vim/functions.vim
-        source ~/.vim/abbrev.vim
+        source ~/.dotfiles/nvim/plugin-settings.vim
+        source ~/.dotfiles/nvim/mapping.vim
+        source ~/.dotfiles/nvim/functions.vim
+        source ~/.dotfiles/nvim/abbrev.vim
     " ┌─────────────────────────┐
     " │ behavior settings       │
         set backspace=indent,eol,start
