@@ -222,6 +222,6 @@
         highlight Folded ctermbg=White ctermfg=Red
         autocmd VimEnter * let g:gruvbox_italic = '1'
         autocmd VimEnter * ++nested colorscheme gruvbox
-        autocmd VimEnter * hi CursorLine   cterm=NONE ctermbg=darkgrey guibg=Grey7 
-        autocmd VimEnter * hi CursorColumn cterm=NONE ctermbg=darkgrey guibg=Grey7 
+        "autocmd VimEnter * hi CursorLine   cterm=NONE ctermbg=Wheat1 guibg=Grey7 
+        "autocmd VimEnter * hi CursorColumn cterm=NONE ctermbg=Wheat1 guibg=Grey7 
         "autocmd VimEnter hi CursorLine term=bold cterm=bold guibg=Grey40
