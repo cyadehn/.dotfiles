@@ -10,11 +10,14 @@
 
 0 directories, 0 files
 /Users/christopherdehner/.vim/plugged
+├── ale
 ├── auto-pairs
 ├── coc.nvim
+├── deoplete.nvim
 ├── gruvbox
 ├── nerdcommenter
 ├── nerdtree
+├── omnisharp-vim
 ├── syntastic
 ├── vim-airline
 ├── vim-airline-themes
@@ -24,7 +27,7 @@
 ├── vim-polyglot
 └── vim-surround
 
-13 directories, 0 files
+16 directories, 0 files
 /Users/christopherdehner/.vim/autoload [error opening dir]
 
 0 directories, 0 files
