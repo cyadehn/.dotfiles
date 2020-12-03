@@ -163,7 +163,7 @@
         git subtree split --prefix bash --branch bash
         git subtree split --prefix nvim --branch nvim
         wait
-        git push
+        git push --all origin
         wait
         HOMEBREW_NO_AUTO_UPDATE=0
         cd $dir
