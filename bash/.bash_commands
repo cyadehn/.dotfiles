@@ -157,8 +157,9 @@
         brew bundle dump
         echo -n "Updates made: "
         read UPDATES
-        git add .
-        git commit -m "$UPDATES"
+        git commit -am "$UPDATES"
+        wait
         git push
+        wait
         cd $dir
     }
