@@ -146,7 +146,7 @@
     }
     function vit() {
         dir=$(pwd)
-        cd ~/.vim
+        cd ~/.dotfiles
         DIRECTORIES=$(tree -L 2)
         tree -L 1 ~/.vim/bundle > dir.txt
         tree -L 1 ~/.vim/colors >> dir.txt

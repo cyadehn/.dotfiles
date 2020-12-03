@@ -1,38 +1,23 @@
-/Users/christopherdehner/.vim/bundle
-├── auto-pairs
-├── ctrlp.vim
-├── gruvbox
-├── nerdcommenter
-├── nerdtree
-├── surround
-├── syntastic
-├── tags
-├── tlib_vim
-├── vim-addon-mw-utils
-├── vim-airline
-├── vim-airline-themes
-├── vim-colors-solarized
-├── vim-dispatch
-├── vim-indent-guides
-├── vim-snipmate
-└── vim-snippets
+/Users/christopherdehner/.vim/bundle [error opening dir]
 
-16 directories, 1 file
+0 directories, 0 files
 /Users/christopherdehner/.vim/colors
 ├── PaperColor.vim
 └── gruvbox
 
 1 directory, 1 file
-/Users/christopherdehner/.vim/plugin
-└── ipmotion
+/Users/christopherdehner/.vim/plugin [error opening dir]
 
-0 directories, 1 file
+0 directories, 0 files
 /Users/christopherdehner/.vim/plugged
+├── ale
 ├── auto-pairs
 ├── coc.nvim
+├── deoplete.nvim
 ├── gruvbox
 ├── nerdcommenter
 ├── nerdtree
+├── omnisharp-vim
 ├── syntastic
 ├── vim-airline
 ├── vim-airline-themes
@@ -42,8 +27,7 @@
 ├── vim-polyglot
 └── vim-surround
 
-13 directories, 0 files
-/Users/christopherdehner/.vim/autoload
-└── pathogen.vim
+16 directories, 0 files
+/Users/christopherdehner/.vim/autoload [error opening dir]
 
-0 directories, 1 file
+0 directories, 0 files
