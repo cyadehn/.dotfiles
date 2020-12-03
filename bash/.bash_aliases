@@ -55,5 +55,5 @@
     alias lsl='ls -l'
     alias t='time'
     alias k='kill'
-    alias h='history 300 | less'
+    alias h='history 300 | less +G'
     
