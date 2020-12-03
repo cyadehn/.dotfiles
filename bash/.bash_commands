@@ -159,6 +159,9 @@
         read UPDATES
         git commit -am "$UPDATES"
         wait
+        git subtree split --prefix bash --branch bash
+        git subtree split --prefix nvim --branch nvim
+        wait
         git push
         wait
         cd $dir
