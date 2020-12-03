@@ -145,6 +145,7 @@
         dotnet sln add ./$NAME.Tests/$NAME.Tests.csproj
     }
     function vit() {
+        HOMEBREW_NO_AUTO_UPDATE=1
         dir=$(pwd)
         cd ~/.dotfiles
         DIRECTORIES=$(tree -L 2)
@@ -164,5 +165,6 @@
         wait
         git push
         wait
+        HOMEBREW_NO_AUTO_UPDATE=0
         cd $dir
     }
