@@ -159,12 +159,18 @@
         echo -n "Updates made: "
         read UPDATES
         git commit -am "$UPDATES"
+        #wait
+        #git subtree split --prefix bash --branch bash
+        #git subtree split --prefix nvim --branch nvim
         wait
-        git subtree split --prefix bash --branch bash
-        git subtree split --prefix nvim --branch nvim
-        wait
-        git push --all origin
+        git push
         wait
         HOMEBREW_NO_AUTO_UPDATE=0
         cd $dir
     }
+function AWSdfupdate
+{
+    cd
+    git fetch dotfiles
+    git checkout dotfiles -- .{bash_profile, bash_aliases, bash_commands}
+}
