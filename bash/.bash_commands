@@ -172,5 +172,5 @@ function AWSdfupdate
 {
     cd
     git fetch dotfiles
-    git checkout dotfiles/main -- bash/.{bash_profile, bash_aliases, bash_commands}
+    git checkout dotfiles/main -- bash/.bash_profile bash/.bash_aliases bash/.bash_commands
 }
