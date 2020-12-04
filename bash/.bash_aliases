@@ -18,6 +18,7 @@
     alias vim="nvim -v"
     alias cvim="nvim ./*.cs"            
     alias nn="nvim"
+    alias ga="git add"
     alias gap="git add -p"
     alias st="git status"
     alias com='git commit -m'
