@@ -145,7 +145,6 @@
         dotnet sln add ./$NAME.Tests/$NAME.Tests.csproj
     }
     function vit() {
-        HOMEBREW_NO_AUTO_UPDATE=1
         dir=$(pwd)
         cd ~/.dotfiles
         DIRECTORIES=$(tree -L 2)
@@ -154,8 +153,10 @@
         tree -L 1 ~/.vim/plugin >> dir.txt
         tree -L 1 ~/.vim/plugged >> dir.txt
         tree -L 1 ~/.vim/autoload >> dir.txt
+        export HOMEBREW_NO_AUTO_UPDATE=1
         rm Brewfile
         brew bundle dump
+        export HOMEBREW_NO_AUTO_UPDATE=0
         echo -n "Updates made: "
         read UPDATES
         git commit -am "$UPDATES"
@@ -165,7 +166,6 @@
         wait
         git push
         wait
-        HOMEBREW_NO_AUTO_UPDATE=0
         cd $dir
     }
 function AWSdfupdate
