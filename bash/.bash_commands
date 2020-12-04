@@ -170,7 +170,10 @@
     }
 function awsdfupdate
 {
+    dir=$(pwd)
     cd
     git fetch dotfiles
     git checkout dotfiles/main -- bash/.bash_profile bash/.bash_aliases bash/.bash_commands
+    git reset HEAD bash/
+    cd $dir
 }
