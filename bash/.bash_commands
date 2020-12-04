@@ -168,7 +168,7 @@
         wait
         cd $dir
     }
-function AWSdfupdate
+function awsdfupdate
 {
     cd
     git fetch dotfiles
