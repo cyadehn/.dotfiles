@@ -177,3 +177,14 @@ function awsdfupdate
     git reset HEAD bash/
     cd $dir
 }
+alias mk="makeit && go"
+function makeit()
+{
+    current=${PWD##*/}
+    make $current
+}
+function go()
+{
+    current=${PWD##*/}
+    ./$current
+}

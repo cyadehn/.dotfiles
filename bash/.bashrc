@@ -3,6 +3,14 @@ export PS1="[\[\e[0;34m\]\u\[\e[0m\]@\h]:\[\e[0;32m\]\w\[\e[m\]\\n\\$ "
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
+# cs50 lib env variables
+export CC="clang"
+export CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow"
+export LDLIBS="-lcs50 -lm"
+export LIBRARY_PATH=/usr/local/lib
+export LD_LIBRARY_PATH=/usr/local/lib
+export C_INCLUDE_PATH=/usr/local/include
+
 set () {
 	loc=$1
 }
