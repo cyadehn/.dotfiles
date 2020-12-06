@@ -20,6 +20,7 @@
     alias nn="nvim"
     alias ga="git add"
     alias gap="git add -p"
+    alias gp="git push"
     alias st="git status"
     alias com='git commit -m'
     alias clone='git clone'
