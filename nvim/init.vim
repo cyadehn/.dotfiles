@@ -87,9 +87,9 @@
         set autoindent
         set smartindent
         set smarttab
-        set shiftwidth=2
-        set softtabstop=2
-        set tabstop=2
+        set shiftwidth=4
+        set softtabstop=4
+        set tabstop=4
         set expandtab
         " Auto indent pasted text
         "nnoremap p p=`]<C-o>
@@ -215,13 +215,15 @@
         let g:airline#extensions#tabline#buffer_nr_show = 1
         set termguicolors
         set cursorline
-        set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h15
+        set guifont=OpenDyslexicMono\ Regular:h15
+        "set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h15
         " Theme settings
         set t_Co=256
         set background=light
         highlight Folded ctermbg=White ctermfg=Red
         autocmd VimEnter * let g:gruvbox_italic = '1'
         autocmd VimEnter * ++nested colorscheme gruvbox
+        autocmd BufEnter * Highlightevery 150 300
         "autocmd VimEnter * hi CursorLine   cterm=NONE ctermbg=Wheat1 guibg=Grey7 
         "autocmd VimEnter * hi CursorColumn cterm=NONE ctermbg=Wheat1 guibg=Grey7 
         "autocmd VimEnter hi CursorLine term=bold cterm=bold guibg=Grey40

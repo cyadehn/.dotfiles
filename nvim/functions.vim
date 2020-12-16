@@ -49,3 +49,19 @@
             autocmd BufEnter * call PrettyIndent()
             autocmd InsertLeave * call PrettyIndent()
         augroup END
+    " ┌─────────────────────────┐
+    " │     PrettyIndent (?)    │
+    " └─────────────────────────┘
+    function HighlightEvery(lineNumber, lineEnd)
+        highlight myhighlightpattern ctermbg=darkred guibg=darkred
+        let pattern="/"
+        let i = 0
+        while i < a:lineEnd
+            let i += a:lineNumber
+            let pattern .= "\\%" . i . "l\\|"
+        endwhile
+        let pattern .= "\\%0l/"
+        let commandToExecute = "match myhighlightpattern ".pattern
+        execute commandToExecute
+    endfunction
+    command -nargs=* Highlightevery call HighlightEvery(<f-args>)
