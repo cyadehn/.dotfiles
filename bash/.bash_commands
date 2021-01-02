@@ -124,7 +124,7 @@
                 vit;;
         esac
         sn
-        cd $currentDir
+        cd "$currentDir"
         clr
     }
     function .init() {

@@ -28,6 +28,8 @@
     alias lg="lazygit"
     alias gil="gh issue list"
     alias gi="gh issue view"
+    alias bcat="cat back.html | pbcopy"
+    alias fcat="cat front.html | pbcopy"
 # ┌─────────────────────────┐
 # │        FRAMEWORKS       │
 # └─────────────────────────┘
