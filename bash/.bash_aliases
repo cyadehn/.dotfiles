@@ -44,7 +44,7 @@
     alias dld="cd ~/Downloads && n"
     alias vs="cd ~/Projects && n"
     alias rc="cd ~/.dotfiles && n"
-    alias anki="~/Library/Application Support/Anki2/Chris/collection.media/scripts/basic/jap-en"
+    alias anki="cd ~/Library/Application\ Support/Anki2/Chris/collection.media/scripts"
     alias ..='cd ..'
     alias ...='cd ..; cd ..'
     alias ....='cd ..; cd ..; cd ..'
