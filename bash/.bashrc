@@ -1,4 +1,4 @@
-export PS1="[\[\e[0;34m\]\u\[\e[0m\]@\h]:\[\e[0;32m\]\w\[\e[m\]\\n\\$ "
+#export PS1="[\[\e[0;34m\]\u\[\e[0m\]@\h]:\[\e[0;32m\]\w\[\e[m\]\\n\\$ "
 
 export VISUAL=nvim
 export EDITOR="$VISUAL"

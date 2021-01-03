@@ -188,3 +188,7 @@ function go()
     current=${PWD##*/}
     ./$current
 }
+function pcat()
+{
+    cat $1 | pbcopy
+}

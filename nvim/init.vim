@@ -12,9 +12,7 @@
         filetype indent plugin on
         syntax on
         set showmatch
-        hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
-    " ┌─────────────────────────┐
-    " │ Must-haves              │
+        hi MatchParen ctermbg=none ctermfg=magenta cterm=bold 
         " Allow buffers to switch without write, confirm on close 
         set hidden
         set confirm
@@ -40,14 +38,9 @@
         set notimeout ttimeout ttimeoutlen=200
         " Use <F11> to toggle between 'paste' and 'nopaste'
         set pastetoggle=<F11>
-    " ┌─────────────────────────┐
-    " │ Useful Mappings         │
         " Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
         " which is the default
         map Y y$
-        " Map <C-L> (redraw screen) to also turn off search highlighting until the
-        " next search
-        "autocmd VimEnter * nnoremap <C-L> :nohl<CR>
 
 " VictorMours Dotfile https://github.com/victormours/dotfiles/blob/master/vim/vimrc
     " Mostly stolen from Yan Pritzer's most excellent Yadr (github.com/skwp/dotfiles)
@@ -57,12 +50,12 @@
         set history=1000                "Store lots of :cmdline history
         set showcmd                     "Show incomplete cmds down the bottom
         "set showmode                    "Show current mode down the bottom
-        set gcr=a:blinkon0              "Disable cursor blink
+        "set gcr=a:blinkon0              "Disable cursor blink
         set visualbell                  "No sounds
         set t_vb=                       "No visualbell either
         set autoread                    "Reload files changd outside vim
         " Copy the relative path of the current file to the clipboard
-        nmap <Leader>cf :silent !echo -n % \| pbcopy<Enter>
+        "nmap <Leader>cf :silent !echo -n % \| pbcopy<Enter>
         " Only wrap at special characters
         set wrap       "Don't wrap lines
         set linebreak    "Wrap lines at convenient points
@@ -100,92 +93,6 @@
         "set softtabstop=4
         "set tabstop=4
         "set expandtab
-    " ┌─────────────────────────┐
-    " │ Plugins                 │
-        "call plug#begin('~/.vim/plugged')
-        "
-        "" Cool plugins
-        "Plug 'Xuyuanp/nerdtree-git-plugin'
-        "Plug 'yegappan/mru'
-        "Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
-        "Plug 'junegunn/fzf.vim'
-        "Plug 'ctrlpvim/ctrlp.vim'
-        "Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-        "
-        "Plug 'tommcdo/vim-exchange'
-        "Plug 'ntpeters/vim-better-whitespace'
-        "Plug 'tpope/vim-repeat'
-        "Plug 'jiangmiao/auto-pairs'
-        "Plug 'vim-scripts/CursorLineCurrentWindow'
-        "Plug 'victormours/better-writing.vim'
-        "Plug 'janko-m/vim-test'
-        "Plug 'skywind3000/asyncrun.vim'
-        "Plug 'dense-analysis/ale'
-        "
-        "" Search
-        "Plug 'henrik/vim-indexed-search'
-        "Plug 'nixprime/cpsm'
-        "Plug 'mileszs/ack.vim'
-        "
-        "" Git
-        "Plug 'tpope/vim-fugitive'
-        "
-        "" Tmux
-        "Plug 'tmux-plugins/vim-tmux'
-        "Plug 'christoomey/vim-tmux-navigator'
-        "
-        "" Visuals
-        "Plug 'altercation/vim-colors-solarized'
-        "
-        "" Commenting
-        "Plug 'tomtom/tlib_vim'
-        "Plug 'tomtom/tcomment_vim'
-        "
-        "" HTML
-        "Plug 'mattn/emmet-vim'
-        "Plug 'slim-template/vim-slim'
-        "Plug 'mustache/vim-mustache-handlebars'
-        "
-        "" Javascript
-        "Plug 'pangloss/vim-javascript'
-        "Plug 'mxw/vim-jsx'
-        "Plug 'othree/yajs.vim'
-        "Plug 'othree/javascript-libraries-syntax.vim'
-        "Plug 'claco/jasmine.vim'
-        "Plug 'kchmck/vim-coffee-script'
-        "Plug 'lfilho/cosco.vim'
-        "
-        "" Ruby
-        "Plug 'Keithbsmiley/rspec.vim'
-        "Plug 'tpope/vim-rails'
-        "Plug 'tpope/vim-endwise'
-        "Plug 'victormours/vim-ruby-refactoring'
-        "Plug 'vim-ruby/vim-ruby'
-        "Plug 'emilsoman/spec-outline.vim'
-        "Plug 'victormours/vim-rspec'
-        "Plug 'nelstrom/vim-textobj-rubyblock'
-        "Plug 'kana/vim-textobj-user'
-        "Plug 'jgdavey/vim-blockle'
-        "Plug 'KurtPreston/vim-autoformat-rails'
-        "Plug 'ngmy/vim-rubocop'
-        "Plug 'victormours/ruby-memoize.vim'
-        "
-        "" Elixir
-        "Plug 'elixir-lang/vim-elixir'
-        "
-        "" Elm
-        "Plug 'lambdatoast/elm.vim'
-        "
-        "" Terraform
-        "Plug 'hashivim/vim-terraform'
-        "
-        "
-        "call plug#end()
-        "
-    " ┌─────────────────────────┐
-    " │ Grep Settings           │
-        " grep word under cursor
-        nnoremap <Leader>g :grep! "\b<C-R><C-W>\b"<CR>:cw<CR><CR>
 
 " Cyadehn Dotfile Settings https://github.com/victormours/dotfiles/blob/master/vim/vimrc
     " ┌─────────────────────────┐
@@ -207,6 +114,7 @@
         " Open splits on the right and below
         set splitbelow
         set splitright
+        autocmd VimEnter * :redraw!
     " ┌─────────────────────────┐
     " │ appearance settings     │
         " Powerline settings
@@ -215,15 +123,9 @@
         let g:airline#extensions#tabline#buffer_nr_show = 1
         set termguicolors
         set cursorline
-        set guifont=OpenDyslexicMono\ Regular:h15
-        "set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h15
+        set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h15
         " Theme settings
         set t_Co=256
-        set background=light
-        highlight Folded ctermbg=White ctermfg=Red
-        autocmd VimEnter * let g:gruvbox_italic = '1'
-        autocmd VimEnter * ++nested colorscheme gruvbox
-        autocmd BufEnter * Highlightevery 150 300
-        "autocmd VimEnter * hi CursorLine   cterm=NONE ctermbg=Wheat1 guibg=Grey7 
-        "autocmd VimEnter * hi CursorColumn cterm=NONE ctermbg=Wheat1 guibg=Grey7 
-        "autocmd VimEnter hi CursorLine term=bold cterm=bold guibg=Grey40
+        "set background=light
+        "highlight Folded guibg=White guifg=Red
+        "autocmd BufEnter * Highlightevery 150 300
