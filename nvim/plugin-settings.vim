@@ -29,6 +29,7 @@
                 Plug 'vim-airline/vim-airline'
                 Plug 'vim-airline/vim-airline-themes'
                 Plug 'altercation/vim-colors-solarized'
+                Plug 'wakatime/vim-wakatime'
             call plug#end()
             autocmd VimEnter * let g:gruvbox_italic = '1'
             autocmd VimEnter * ++nested colorscheme gruvbox
