@@ -197,5 +197,5 @@ function gen()
     root="/Users/christopherdehner/Library/Application\ Support/Anki2/Chris/collection.media/scripts/basic"
     eval cd $root/src 
     ./_generate.sh
-    eval cd $root/output
+    eval cd $root/output/en-jap
 }
