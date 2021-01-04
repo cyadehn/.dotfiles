@@ -23,9 +23,10 @@
 ├── vim-dispatch
 ├── vim-indent-guides
 ├── vim-polyglot
-└── vim-surround
+├── vim-surround
+└── vim-wakatime
 
-14 directories, 0 files
+15 directories, 0 files
 /Users/christopherdehner/.vim/autoload [error opening dir]
 
 0 directories, 0 files

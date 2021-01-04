@@ -499,601 +499,601 @@
       },
       "description": "Invalid character for strip valid word when inserting text of complete item.",
       "default": [" ", "(", "<", "{", "[", "\r", "\n"]
-    },
-    "suggest.asciiCharactersOnly": {
-      "type": "boolean",
-      "description": "Suggest ASCII characters only",
-      "default": false
-    },
-    "diagnostic.enable": {
-      "type": "boolean",
-      "description": "Set to false to disable diagnostic display",
-      "default": true
-    },
-    "diagnostic.level": {
-      "type": "string",
-      "description": "Used for filter diagnostics by diagnostic severity.",
-      "default": "hint",
-      "enum": ["hint", "information", "warning", "error"]
-    },
-    "diagnostic.locationlistUpdate": {
-      "type": "boolean",
-      "description": "Update locationlist on diagnostics change, only works with locationlist opened by :CocDiagnostics command and first window of associated buffer.",
-      "default": true
-    },
-    "diagnostic.checkCurrentLine": {
-      "type": "boolean",
-      "description": "When enabled, show all diagnostics of current line if there are none at the current position.",
-      "default": false
-    },
-    "diagnostic.messageTarget": {
-      "type": "string",
-      "description": "Diagnostic message target.",
-      "default": "float",
-      "enum": ["echo", "float"]
-    },
-    "diagnostic.messageDelay": {
-      "type": "number",
-      "description": "How long to wait (in milliseconds) before displaying the diagnostic message with echo or float",
-      "default": 200
-    },
-    "diagnostic.refreshOnInsertMode": {
-      "type": "boolean",
-      "description": "Enable diagnostic refresh on insert mode, default false.",
-      "default": false
-    },
-    "diagnostic.refreshAfterSave": {
-      "type": "boolean",
-      "description": "Only refresh diagnostics after save, default false.",
-      "default": false
-    },
-    "diagnostic.displayByAle": {
-      "type": "boolean",
-      "description": "Use Ale for display diagnostics in vim, will disable coc for display diagnostics, restart required on change.",
-      "default": false
-    },
-    "diagnostic.virtualText": {
-      "type": "boolean",
-      "description": "Use NeoVim virtual text to display diagnostics",
-      "default": false
-    },
-    "diagnostic.virtualTextCurrentLineOnly": {
-      "type": "boolean",
-      "description": "Only show virtualText diagnostic on current cursor line",
-      "default": true
-    },
-    "diagnostic.virtualTextPrefix": {
-      "type": "string",
-      "description": "The prefix added virtual text diagnostics",
-      "default": " "
-    },
-    "diagnostic.virtualTextLines": {
-      "type": "number",
-      "description": "The number of non empty lines from a diagnostic to display",
-      "default": 3
-    },
-    "diagnostic.virtualTextLineSeparator": {
-      "type": "string",
-      "description": "The text that will mark a line end from the diagnostic message",
-      "default": " \\ "
-    },
-    "diagnostic.enableSign": {
-      "type": "boolean",
-      "default": true,
-      "description": "Enable signs for diagnostics."
-    },
-    "diagnostic.enableHighlightLineNumber": {
-      "type": "boolean",
-      "default": true,
-      "description": "Enable highlighting line numbers for diagnostics, only works with neovim and diagnostic.enableSign is true."
-    },
-    "diagnostic.enableMessage": {
-      "type": "string",
-      "default": "always",
-      "description": "When to enable show messages of diagnostics.",
-      "enum": ["always", "jump", "never"]
-    },
-    "diagnostic.highlightOffset": {
-      "type": "number",
-      "description": "Offset number of buffer.addHighlight, neovim only.",
-      "default": 1000
-    },
-    "diagnostic.signOffset": {
-      "type": "number",
-      "description": "Offset number of sign",
-      "default": 1000
-    },
-    "diagnostic.errorSign": {
-      "type": "string",
-      "description": "Text of error sign",
-      "default": ">>"
-    },
-    "diagnostic.warningSign": {
-      "type": "string",
-      "description": "Text of warning sign",
-      "default": "⚠"
-    },
-    "diagnostic.infoSign": {
-      "type": "string",
-      "description": "Text of info sign",
-      "default": ">>"
-    },
-    "diagnostic.hintSign": {
-      "type": "string",
-      "description": "Text of hint sign",
-      "default": ">>"
-    },
-    "diagnostic.maxWindowHeight": {
-      "type": "number",
-      "description": "Maximum height of diagnostics floating window.",
-      "default": 8
-    },
-    "diagnostic.maxWindowWidth": {
-      "type": "number",
-      "description": "Maximum width of diagnostics floating window.",
-      "default": 80
-    },
-    "diagnostic.filetypeMap": {
-      "type": "object",
-      "description": "A map between buffer filetype and the filetype assigned to diagnostics. To syntax highlight diagnostics withs their parent buffer type use `\"default\": \"bufferType\"`",
-      "default": {}
-    },
-    "diagnostic.format": {
-      "type": "string",
-      "description": "Define the diagnostic format. Available parts: source, code, severity, message",
-      "default": "[%source%code] [%severity] %message"
-    },
-    "diagnostic.separateRelatedInformationAsDiagnostics": {
-      "type": "boolean",
-      "default": false,
-      "description": "Separate related information as diagnostics"
-    },
-    "signature.enable": {
-      "type": "boolean",
-      "description": "Enable signature help when trigger character typed, require restart service on change.",
-      "default": true
-    },
-    "signature.triggerSignatureWait": {
-      "type": "integer",
-      "default": 50,
-      "minimum": 50,
-      "maximum": 300,
-      "description": "Timeout for trigger signature help, in miliseconds."
-    },
-    "signature.target": {
-      "type": "string",
-      "description": "Target of signature help, use float when possible by default.",
-      "enum": ["float", "echo", "preview"]
-    },
-    "signature.maxWindowWidth": {
-      "type": "integer",
-      "default": 80,
-      "description": "Maximum width of signature float window (or popup on vim8)."
-    },
-    "signature.maxWindowHeight": {
-      "type": "number",
-      "description": "Maximum height of signature float window (or popup on vim8).",
-      "minimum": 3,
-      "default": 8
-    },
-    "signature.preferShownAbove": {
-      "type": "boolean",
-      "description": "Show signature help float window above cursor when possible, require restart service on change.",
-      "default": true
-    },
-    "signature.hideOnTextChange": {
-      "type": "boolean",
-      "description": "Hide signature float window when text changed, require restart service on change.",
-      "default": false
-    },
-    "codeLens.enable": {
-      "type": "boolean",
-      "description": "Enable codeLens feature, require neovim with set virtual text feature.",
-      "default": false
-    },
-    "codeLens.separator": {
-      "type": "string",
-      "description": "Separator text for codeLens in virtual text",
-      "default": "‣"
-    },
-    "codeLens.subseparator": {
-      "type": "string",
-      "description": "Subseparator between codeLenses in virtual text",
-      "default": " "
-    },
-    "refactor.openCommand": {
-      "type": "string",
-      "description": "Open command for refactor window.",
-      "default": "vsplit"
-    },
-    "refactor.beforeContext": {
-      "type": "number",
-      "default": 3,
-      "description": "Print num lines of leading context before each match."
-    },
-    "refactor.afterContext": {
-      "type": "number",
-      "default": 3,
-      "description": "Print num lines of trailing context after each match."
-    },
-    "workspace.ignoredFiletypes": {
-      "type": "array",
-      "default": ["markdown", "log", "txt", "help"],
-      "description": "Filetypes that should be ignored for resolve workspace folder.",
-      "items": {
-        "type": "string"
-      }
-    },
-    "list.indicator": {
-      "type": "string",
-      "default": ">",
-      "description": "The character used as first character in prompt line"
-    },
-    "list.interactiveDebounceTime": {
-      "type": "number",
-      "default": 100,
-      "description": "Debouce time for input change on interactive mode."
-    },
-    "list.height": {
-      "type": "number",
-      "default": 10,
-      "description": "Height of split list window."
-    },
-    "list.signOffset": {
-      "type": "number",
-      "default": 900,
-      "description": "Sign offset of list, should be different from other plugins."
-    },
-    "list.selectedSignText": {
-      "type": "string",
-      "default": "*",
-      "description": "Sign text for selected lines."
-    },
-    "list.extendedSearchMode": {
-      "type": "boolean",
-      "default": true,
-      "description": "Enable extended search mode which allows multiple search patterns delimited by spaces."
-    },
-    "list.limitLines": {
-      "type": "number",
-      "default": 30000,
-      "description": "Limit lines for list buffer."
-    },
-    "list.maxPreviewHeight": {
-      "type": "number",
-      "default": 12,
-      "description": "Max height for preview window of list."
-    },
-    "list.previewSplitRight": {
-      "type": "boolean",
-      "default": false,
-      "description": "Use vsplit for preview window."
-    },
-    "list.previewHighlightGroup": {
-      "type": "string",
-      "default": "Search",
-      "description": "Highlight group used for highlight the range in preview window."
-    },
-    "list.nextKeymap": {
-      "type": "string",
-      "default": "<C-j>",
-      "description": "Key used for select next line on insert mode."
-    },
-    "list.previousKeymap": {
-      "type": "string",
-      "default": "<C-k>",
-      "description": "Key used for select previous line on insert mode."
-    },
-    "list.normalMappings": {
-      "type": "object",
-      "default": {},
-      "description": "Custom keymappings on normal mode."
-    },
-    "list.insertMappings": {
-      "type": "object",
-      "default": {},
-      "description": "Custom keymappings on insert mode."
-    },
-    "list.source.symbols.excludes": {
-      "type": "array",
-      "default": [],
-      "description": "Patterns of mimimatch for filepath to execlude from symbols list.",
-      "items": {
-        "type": "string"
-      }
-    },
-    "list.source.outline.ctagsFilestypes": {
-      "type": "array",
-      "default": [],
-      "description": "Filetypes that should use ctags for outline instead of language server.",
-      "items": {
-        "type": "string"
-      }
-    },
-    "cursors.cancelKey": {
-      "type": "string",
-      "default": "<esc>",
-      "description": "Key used for cancel cursors session."
-    },
-    "cursors.nextKey": {
-      "type": "string",
-      "default": "<C-n>",
-      "description": "Key used for jump to next cursors position. "
-    },
-    "cursors.previousKey": {
-      "type": "string",
-      "default": "<C-p>",
-      "description": "Key used for jump to previous cursors position."
-    },
-    "coc.preferences.maxFileSize": {
-      "type": "string",
-      "default": "10MB",
-      "description": "Maximum file size in bytes that coc.nvim should handle, default '10MB'"
-    },
-    "coc.preferences.promptWorkspaceEdit": {
-      "type": "boolean",
-      "description": "Prompt confirm from user when apply workspace edit for unloaded files.",
-      "default": true
-    },
-    "coc.preferences.listOfWorkspaceEdit": {
-      "type": "string",
-      "default": "quickfix",
-      "description": "List should contains changed locations after workspace edit, default to vim's quickfix",
-      "enum": ["quickfix", "location", "none"]
-    },
-    "coc.preferences.useQuickfixForLocations": {
-      "type": "boolean",
-      "description": "Use vim's quickfix list for jump locations,\n need restart on change.",
-      "default": false
-    },
-    "coc.preferences.extensionUpdateCheck": {
-      "type": "string",
-      "default": "never",
-      "description": "Interval for check extension update, could be daily, weekly, never",
-      "enum": ["daily", "weekly", "never"]
-    },
-    "coc.preferences.snippetStatusText": {
-      "type": "string",
-      "default": "SNIP",
-      "description": "Text shown in statusline to indicate snippet session is activated."
-    },
-    "coc.preferences.hoverTarget": {
-      "type": "string",
-      "description": "Target to show hover information, default is floating window when possible.",
-      "enum": ["preview", "echo", "float"]
-    },
-    "coc.preferences.colorSupport": {
-      "type": "boolean",
-      "description": "Enable color highlight if language server support it.",
-      "default": true
-    },
-    "coc.preferences.previewAutoClose": {
-      "type": "boolean",
-      "description": "Auto close preview window on cursor move.",
-      "default": true
-    },
-    "coc.preferences.previewMaxHeight": {
-      "type": "number",
-      "default": 12,
-      "description": "Max height of preview window for hover."
-    },
-    "coc.preferences.currentFunctionSymbolAutoUpdate": {
-      "type": "boolean",
-      "description": "Automatically update the value of b:coc_current_function on CursorHold event",
-      "default": false
-    },
-    "coc.preferences.formatOnSaveFiletypes": {
-      "type": "array",
-      "default": [],
-      "description": "Filetypes that should run format on save.",
-      "items": {
-        "type": "string"
-      }
-    },
-    "coc.preferences.formatOnInsertLeave": {
-      "type": "boolean",
-      "description": "Trigger format on type when insert leave by send \n to the server.",
-      "default": false
-    },
-    "coc.preferences.enableFloatHighlight": {
-      "type": "boolean",
-      "description": "Enable highlight for floating window.",
-      "default": true
-    },
-    "coc.preferences.rootPatterns": {
-      "type": "array",
-      "default": [".git", ".hg", ".projections.json"],
-      "description": "Root patterns to resolve workspaceFolder from parent folders of opened files, resolved from up to down.",
-      "items": {
-        "type": "string"
-      }
-    },
-    "coc.preferences.watchmanPath": {
-      "type": "string",
-      "description": "executable path for https://facebook.github.io/watchman/, detected from $PATH by default",
-      "default": null
-    },
-    "coc.preferences.jumpCommand": {
-      "type": "string",
-      "description": "Command used for location jump, like goto definition, goto references etc.",
-      "enum": ["edit", "split", "vsplit", "tabe", "drop", "tab drop"],
-      "default": "edit"
-    },
-    "coc.preferences.messageLevel": {
-      "type": "string",
-      "description": "Message level for filter echoed messages, could be 'more', 'warning' and 'error'",
-      "default": "more",
-      "enum": ["more", "warning", "error"]
-    },
-    "coc.preferences.bracketEnterImprove": {
-      "type": "boolean",
-      "description": "Improve enter inside bracket `<> {} [] ()` by add new empty line below and place cursor to it. Works with `coc#on_enter()`",
-      "default": true
-    },
-    "coc.preferences.formatOnType": {
-      "type": "boolean",
-      "description": "Set to true to enable format on type",
-      "default": false
-    },
-    "coc.preferences.formatOnTypeFiletypes": {
-      "type": "array",
-      "default": [],
-      "description": "Filetypes that should run format on typing. Only take effect when `coc.preferences.formatOnType` set `true`",
-      "items": {
-        "type": "string"
-      }
-    },
-    "coc.preferences.highlightTimeout": {
-      "type": "integer",
-      "default": 500,
-      "minimum": 200,
-      "maximum": 5000,
-      "description": "Highlight timeout for buffer in floating window."
-    },
-    "coc.preferences.snippets.enable": {
-      "type": "boolean",
-      "description": "Set to false to disable snippets support.",
-      "default": true
-    },
-    "coc.preferences.floatActions": {
-      "type": "boolean",
-      "description": "Set to false to disable float/popup support for actions menu, won't work on vim without float or popup window support.",
-      "default": true
-    },
-    "coc.preferences.promptInput": {
-      "type": "boolean",
-      "description": "Use prompt buffer in float window for user input, works on neovim >= 0.4.3 only.",
-      "default": true
-    },
-    "coc.preferences.enableMarkdown": {
-      "type": "boolean",
-      "description": "Tell the language server that markdown text format is supported, note that markdown text may not rendered as expected.",
-      "default": true
-    },
-    "coc.preferences.silentAutoupdate": {
-      "type": "boolean",
-      "description": "Not open split window with update status when performing auto update.",
-      "default": true
-    },
-    "coc.source.around.enable": {
-      "type": "boolean",
-      "default": true
-    },
-    "coc.source.around.firstMatch": {
-      "type": "boolean",
-      "description": "Filter complete items by first letter strict match.",
-      "default": true
-    },
-    "coc.source.around.shortcut": {
-      "type": "string",
-      "default": "A"
-    },
-    "coc.source.around.priority": {
-      "type": "integer",
-      "default": 1
-    },
-    "coc.source.around.disableSyntaxes": {
-      "type": "array",
-      "default": [],
-      "items": {
-        "type": "string"
-      }
-    },
-    "coc.source.buffer.enable": {
-      "type": "boolean",
-      "default": true
-    },
-    "coc.source.buffer.shortcut": {
-      "type": "string",
-      "default": "B"
-    },
-    "coc.source.buffer.priority": {
-      "type": "integer",
-      "default": 1
-    },
-    "coc.source.buffer.firstMatch": {
-      "type": "boolean",
-      "description": "Filter complete items by first letter strict match.",
-      "default": true
-    },
-    "coc.source.buffer.ignoreGitignore": {
-      "type": "boolean",
-      "default": true,
-      "description": "Ignore git ignored files for buffer words"
-    },
-    "coc.source.buffer.disableSyntaxes": {
-      "type": "array",
-      "default": [],
-      "items": {
-        "type": "string"
-      }
-    },
-    "coc.source.file.enable": {
-      "type": "boolean",
-      "default": true
-    },
-    "coc.source.file.shortcut": {
-      "type": "string",
-      "default": "F"
-    },
-    "coc.source.file.priority": {
-      "type": "integer",
-      "default": 10
-    },
-    "coc.source.file.disableSyntaxes": {
-      "type": "array",
-      "default": [],
-      "items": {
-        "type": "string"
-      }
-    },
-    "coc.source.file.triggerCharacters": {
-      "type": "array",
-      "default": ["/"],
-      "items": {
-        "type": "string"
-      }
-    },
-    "coc.source.file.trimSameExts": {
-      "type": "array",
-      "default": [".ts", ".js"],
-      "description": "Trim same extension on file completion",
-      "items": {
-        "type": "string"
-      }
-    },
-    "coc.source.file.ignoreHidden": {
-      "type": "boolean",
-      "default": true,
-      "description": "Ignore completion for hidden files"
-    },
-    "coc.source.file.ignorePatterns": {
-      "type": "array",
-      "default": [],
-      "description": "Ignore patterns of matcher",
-      "items": {
-        "type": "string"
-      }
-    },
-    "languageserver": {
-      "type": "object",
-      "default": {},
-      "description": "Dictionary of languageservers, key is used as id of languageserver.",
-      "patternProperties": {
-        "^[_a-zA-Z]+$": {
-          "oneOf": [
-            {
-              "$ref": "#/definitions/languageServerModule"
-            },
-            {
-              "$ref": "#/definitions/languageServerCommand"
-            },
-            {
-              "$ref": "#/definitions/languageServerSocket"
-            }
-          ]
+      },
+      "suggest.asciiCharactersOnly": {
+        "type": "boolean",
+        "description": "Suggest ASCII characters only",
+        "default": false
+      },
+      "diagnostic.enable": {
+        "type": "boolean",
+        "description": "Set to false to disable diagnostic display",
+        "default": true
+      },
+      "diagnostic.level": {
+        "type": "string",
+        "description": "Used for filter diagnostics by diagnostic severity.",
+        "default": "hint",
+        "enum": ["hint", "information", "warning", "error"]
+      },
+      "diagnostic.locationlistUpdate": {
+        "type": "boolean",
+        "description": "Update locationlist on diagnostics change, only works with locationlist opened by :CocDiagnostics command and first window of associated buffer.",
+        "default": true
+      },
+      "diagnostic.checkCurrentLine": {
+        "type": "boolean",
+        "description": "When enabled, show all diagnostics of current line if there are none at the current position.",
+        "default": false
+      },
+      "diagnostic.messageTarget": {
+        "type": "string",
+        "description": "Diagnostic message target.",
+        "default": "float",
+        "enum": ["echo", "float"]
+      },
+      "diagnostic.messageDelay": {
+        "type": "number",
+        "description": "How long to wait (in milliseconds) before displaying the diagnostic message with echo or float",
+        "default": 200
+      },
+      "diagnostic.refreshOnInsertMode": {
+        "type": "boolean",
+        "description": "Enable diagnostic refresh on insert mode, default false.",
+        "default": false
+      },
+      "diagnostic.refreshAfterSave": {
+        "type": "boolean",
+        "description": "Only refresh diagnostics after save, default false.",
+        "default": false
+      },
+      "diagnostic.displayByAle": {
+        "type": "boolean",
+        "description": "Use Ale for display diagnostics in vim, will disable coc for display diagnostics, restart required on change.",
+        "default": false
+      },
+      "diagnostic.virtualText": {
+        "type": "boolean",
+        "description": "Use NeoVim virtual text to display diagnostics",
+        "default": false
+      },
+      "diagnostic.virtualTextCurrentLineOnly": {
+        "type": "boolean",
+        "description": "Only show virtualText diagnostic on current cursor line",
+        "default": true
+      },
+      "diagnostic.virtualTextPrefix": {
+        "type": "string",
+        "description": "The prefix added virtual text diagnostics",
+        "default": " "
+      },
+      "diagnostic.virtualTextLines": {
+        "type": "number",
+        "description": "The number of non empty lines from a diagnostic to display",
+        "default": 3
+      },
+      "diagnostic.virtualTextLineSeparator": {
+        "type": "string",
+        "description": "The text that will mark a line end from the diagnostic message",
+        "default": " \\ "
+      },
+      "diagnostic.enableSign": {
+        "type": "boolean",
+        "default": true,
+        "description": "Enable signs for diagnostics."
+      },
+      "diagnostic.enableHighlightLineNumber": {
+        "type": "boolean",
+        "default": true,
+        "description": "Enable highlighting line numbers for diagnostics, only works with neovim and diagnostic.enableSign is true."
+      },
+      "diagnostic.enableMessage": {
+        "type": "string",
+        "default": "always",
+        "description": "When to enable show messages of diagnostics.",
+        "enum": ["always", "jump", "never"]
+      },
+      "diagnostic.highlightOffset": {
+        "type": "number",
+        "description": "Offset number of buffer.addHighlight, neovim only.",
+        "default": 1000
+      },
+      "diagnostic.signOffset": {
+        "type": "number",
+        "description": "Offset number of sign",
+        "default": 1000
+      },
+      "diagnostic.errorSign": {
+        "type": "string",
+        "description": "Text of error sign",
+        "default": ">>"
+      },
+      "diagnostic.warningSign": {
+        "type": "string",
+        "description": "Text of warning sign",
+        "default": "⚠"
+      },
+      "diagnostic.infoSign": {
+        "type": "string",
+        "description": "Text of info sign",
+        "default": ">>"
+      },
+      "diagnostic.hintSign": {
+        "type": "string",
+        "description": "Text of hint sign",
+        "default": ">>"
+      },
+      "diagnostic.maxWindowHeight": {
+        "type": "number",
+        "description": "Maximum height of diagnostics floating window.",
+        "default": 8
+      },
+      "diagnostic.maxWindowWidth": {
+        "type": "number",
+        "description": "Maximum width of diagnostics floating window.",
+        "default": 80
+      },
+      "diagnostic.filetypeMap": {
+        "type": "object",
+        "description": "A map between buffer filetype and the filetype assigned to diagnostics. To syntax highlight diagnostics withs their parent buffer type use `\"default\": \"bufferType\"`",
+        "default": {}
+      },
+      "diagnostic.format": {
+        "type": "string",
+        "description": "Define the diagnostic format. Available parts: source, code, severity, message",
+        "default": "[%source%code] [%severity] %message"
+      },
+      "diagnostic.separateRelatedInformationAsDiagnostics": {
+        "type": "boolean",
+        "default": false,
+        "description": "Separate related information as diagnostics"
+      },
+      "signature.enable": {
+        "type": "boolean",
+        "description": "Enable signature help when trigger character typed, require restart service on change.",
+        "default": true
+      },
+      "signature.triggerSignatureWait": {
+        "type": "integer",
+        "default": 50,
+        "minimum": 50,
+        "maximum": 300,
+        "description": "Timeout for trigger signature help, in miliseconds."
+      },
+      "signature.target": {
+        "type": "string",
+        "description": "Target of signature help, use float when possible by default.",
+        "enum": ["float", "echo", "preview"]
+      },
+      "signature.maxWindowWidth": {
+        "type": "integer",
+        "default": 80,
+        "description": "Maximum width of signature float window (or popup on vim8)."
+      },
+      "signature.maxWindowHeight": {
+        "type": "number",
+        "description": "Maximum height of signature float window (or popup on vim8).",
+        "minimum": 3,
+        "default": 8
+      },
+      "signature.preferShownAbove": {
+        "type": "boolean",
+        "description": "Show signature help float window above cursor when possible, require restart service on change.",
+        "default": true
+      },
+      "signature.hideOnTextChange": {
+        "type": "boolean",
+        "description": "Hide signature float window when text changed, require restart service on change.",
+        "default": false
+      },
+      "codeLens.enable": {
+        "type": "boolean",
+        "description": "Enable codeLens feature, require neovim with set virtual text feature.",
+        "default": false
+      },
+      "codeLens.separator": {
+        "type": "string",
+        "description": "Separator text for codeLens in virtual text",
+        "default": "‣"
+      },
+      "codeLens.subseparator": {
+        "type": "string",
+        "description": "Subseparator between codeLenses in virtual text",
+        "default": " "
+      },
+      "refactor.openCommand": {
+        "type": "string",
+        "description": "Open command for refactor window.",
+        "default": "vsplit"
+      },
+      "refactor.beforeContext": {
+        "type": "number",
+        "default": 3,
+        "description": "Print num lines of leading context before each match."
+      },
+      "refactor.afterContext": {
+        "type": "number",
+        "default": 3,
+        "description": "Print num lines of trailing context after each match."
+      },
+      "workspace.ignoredFiletypes": {
+        "type": "array",
+        "default": ["markdown", "log", "txt", "help"],
+        "description": "Filetypes that should be ignored for resolve workspace folder.",
+        "items": {
+          "type": "string"
+        }
+      },
+      "list.indicator": {
+        "type": "string",
+        "default": ">",
+        "description": "The character used as first character in prompt line"
+      },
+      "list.interactiveDebounceTime": {
+        "type": "number",
+        "default": 100,
+        "description": "Debouce time for input change on interactive mode."
+      },
+      "list.height": {
+        "type": "number",
+        "default": 10,
+        "description": "Height of split list window."
+      },
+      "list.signOffset": {
+        "type": "number",
+        "default": 900,
+        "description": "Sign offset of list, should be different from other plugins."
+      },
+      "list.selectedSignText": {
+        "type": "string",
+        "default": "*",
+        "description": "Sign text for selected lines."
+      },
+      "list.extendedSearchMode": {
+        "type": "boolean",
+        "default": true,
+        "description": "Enable extended search mode which allows multiple search patterns delimited by spaces."
+      },
+      "list.limitLines": {
+        "type": "number",
+        "default": 30000,
+        "description": "Limit lines for list buffer."
+      },
+      "list.maxPreviewHeight": {
+        "type": "number",
+        "default": 12,
+        "description": "Max height for preview window of list."
+      },
+      "list.previewSplitRight": {
+        "type": "boolean",
+        "default": false,
+        "description": "Use vsplit for preview window."
+      },
+      "list.previewHighlightGroup": {
+        "type": "string",
+        "default": "Search",
+        "description": "Highlight group used for highlight the range in preview window."
+      },
+      "list.nextKeymap": {
+        "type": "string",
+        "default": "<C-j>",
+        "description": "Key used for select next line on insert mode."
+      },
+      "list.previousKeymap": {
+        "type": "string",
+        "default": "<C-k>",
+        "description": "Key used for select previous line on insert mode."
+      },
+      "list.normalMappings": {
+        "type": "object",
+        "default": {},
+        "description": "Custom keymappings on normal mode."
+      },
+      "list.insertMappings": {
+        "type": "object",
+        "default": {},
+        "description": "Custom keymappings on insert mode."
+      },
+      "list.source.symbols.excludes": {
+        "type": "array",
+        "default": [],
+        "description": "Patterns of mimimatch for filepath to execlude from symbols list.",
+        "items": {
+          "type": "string"
+        }
+      },
+      "list.source.outline.ctagsFilestypes": {
+        "type": "array",
+        "default": [],
+        "description": "Filetypes that should use ctags for outline instead of language server.",
+        "items": {
+          "type": "string"
+        }
+      },
+      "cursors.cancelKey": {
+        "type": "string",
+        "default": "<esc>",
+        "description": "Key used for cancel cursors session."
+      },
+      "cursors.nextKey": {
+        "type": "string",
+        "default": "<C-n>",
+        "description": "Key used for jump to next cursors position. "
+      },
+      "cursors.previousKey": {
+        "type": "string",
+        "default": "<C-p>",
+        "description": "Key used for jump to previous cursors position."
+      },
+      "coc.preferences.maxFileSize": {
+        "type": "string",
+        "default": "10MB",
+        "description": "Maximum file size in bytes that coc.nvim should handle, default '10MB'"
+      },
+      "coc.preferences.promptWorkspaceEdit": {
+        "type": "boolean",
+        "description": "Prompt confirm from user when apply workspace edit for unloaded files.",
+        "default": true
+      },
+      "coc.preferences.listOfWorkspaceEdit": {
+        "type": "string",
+        "default": "quickfix",
+        "description": "List should contains changed locations after workspace edit, default to vim's quickfix",
+        "enum": ["quickfix", "location", "none"]
+      },
+      "coc.preferences.useQuickfixForLocations": {
+        "type": "boolean",
+        "description": "Use vim's quickfix list for jump locations,\n need restart on change.",
+        "default": false
+      },
+      "coc.preferences.extensionUpdateCheck": {
+        "type": "string",
+        "default": "never",
+        "description": "Interval for check extension update, could be daily, weekly, never",
+        "enum": ["daily", "weekly", "never"]
+      },
+      "coc.preferences.snippetStatusText": {
+        "type": "string",
+        "default": "SNIP",
+        "description": "Text shown in statusline to indicate snippet session is activated."
+      },
+      "coc.preferences.hoverTarget": {
+        "type": "string",
+        "description": "Target to show hover information, default is floating window when possible.",
+        "enum": ["preview", "echo", "float"]
+      },
+      "coc.preferences.colorSupport": {
+        "type": "boolean",
+        "description": "Enable color highlight if language server support it.",
+        "default": true
+      },
+      "coc.preferences.previewAutoClose": {
+        "type": "boolean",
+        "description": "Auto close preview window on cursor move.",
+        "default": true
+      },
+      "coc.preferences.previewMaxHeight": {
+        "type": "number",
+        "default": 12,
+        "description": "Max height of preview window for hover."
+      },
+      "coc.preferences.currentFunctionSymbolAutoUpdate": {
+        "type": "boolean",
+        "description": "Automatically update the value of b:coc_current_function on CursorHold event",
+        "default": false
+      },
+      "coc.preferences.formatOnSaveFiletypes": {
+        "type": "array",
+        "default": [],
+        "description": "Filetypes that should run format on save.",
+        "items": {
+          "type": "string"
+        }
+      },
+      "coc.preferences.formatOnInsertLeave": {
+        "type": "boolean",
+        "description": "Trigger format on type when insert leave by send \n to the server.",
+        "default": false
+      },
+      "coc.preferences.enableFloatHighlight": {
+        "type": "boolean",
+        "description": "Enable highlight for floating window.",
+        "default": true
+      },
+      "coc.preferences.rootPatterns": {
+        "type": "array",
+        "default": [".git", ".hg", ".projections.json"],
+        "description": "Root patterns to resolve workspaceFolder from parent folders of opened files, resolved from up to down.",
+        "items": {
+          "type": "string"
+        }
+      },
+      "coc.preferences.watchmanPath": {
+        "type": "string",
+        "description": "executable path for https://facebook.github.io/watchman/, detected from $PATH by default",
+        "default": null
+      },
+      "coc.preferences.jumpCommand": {
+        "type": "string",
+        "description": "Command used for location jump, like goto definition, goto references etc.",
+        "enum": ["edit", "split", "vsplit", "tabe", "drop", "tab drop"],
+        "default": "edit"
+      },
+      "coc.preferences.messageLevel": {
+        "type": "string",
+        "description": "Message level for filter echoed messages, could be 'more', 'warning' and 'error'",
+        "default": "more",
+        "enum": ["more", "warning", "error"]
+      },
+      "coc.preferences.bracketEnterImprove": {
+        "type": "boolean",
+        "description": "Improve enter inside bracket `<> {} [] ()` by add new empty line below and place cursor to it. Works with `coc#on_enter()`",
+        "default": true
+      },
+      "coc.preferences.formatOnType": {
+        "type": "boolean",
+        "description": "Set to true to enable format on type",
+        "default": false
+      },
+      "coc.preferences.formatOnTypeFiletypes": {
+        "type": "array",
+        "default": [],
+        "description": "Filetypes that should run format on typing. Only take effect when `coc.preferences.formatOnType` set `true`",
+        "items": {
+          "type": "string"
+        }
+      },
+      "coc.preferences.highlightTimeout": {
+        "type": "integer",
+        "default": 500,
+        "minimum": 200,
+        "maximum": 5000,
+        "description": "Highlight timeout for buffer in floating window."
+      },
+      "coc.preferences.snippets.enable": {
+        "type": "boolean",
+        "description": "Set to false to disable snippets support.",
+        "default": true
+      },
+      "coc.preferences.floatActions": {
+        "type": "boolean",
+        "description": "Set to false to disable float/popup support for actions menu, won't work on vim without float or popup window support.",
+        "default": true
+      },
+      "coc.preferences.promptInput": {
+        "type": "boolean",
+        "description": "Use prompt buffer in float window for user input, works on neovim >= 0.4.3 only.",
+        "default": true
+      },
+      "coc.preferences.enableMarkdown": {
+        "type": "boolean",
+        "description": "Tell the language server that markdown text format is supported, note that markdown text may not rendered as expected.",
+        "default": true
+      },
+      "coc.preferences.silentAutoupdate": {
+        "type": "boolean",
+        "description": "Not open split window with update status when performing auto update.",
+        "default": true
+      },
+      "coc.source.around.enable": {
+        "type": "boolean",
+        "default": true
+      },
+      "coc.source.around.firstMatch": {
+        "type": "boolean",
+        "description": "Filter complete items by first letter strict match.",
+        "default": true
+      },
+      "coc.source.around.shortcut": {
+        "type": "string",
+        "default": "A"
+      },
+      "coc.source.around.priority": {
+        "type": "integer",
+        "default": 1
+      },
+      "coc.source.around.disableSyntaxes": {
+        "type": "array",
+        "default": [],
+        "items": {
+          "type": "string"
+        }
+      },
+      "coc.source.buffer.enable": {
+        "type": "boolean",
+        "default": true
+      },
+      "coc.source.buffer.shortcut": {
+        "type": "string",
+        "default": "B"
+      },
+      "coc.source.buffer.priority": {
+        "type": "integer",
+        "default": 1
+      },
+      "coc.source.buffer.firstMatch": {
+        "type": "boolean",
+        "description": "Filter complete items by first letter strict match.",
+        "default": true
+      },
+      "coc.source.buffer.ignoreGitignore": {
+        "type": "boolean",
+        "default": true,
+        "description": "Ignore git ignored files for buffer words"
+      },
+      "coc.source.buffer.disableSyntaxes": {
+        "type": "array",
+        "default": [],
+        "items": {
+          "type": "string"
+        }
+      },
+      "coc.source.file.enable": {
+        "type": "boolean",
+        "default": true
+      },
+      "coc.source.file.shortcut": {
+        "type": "string",
+        "default": "F"
+      },
+      "coc.source.file.priority": {
+        "type": "integer",
+        "default": 10
+      },
+      "coc.source.file.disableSyntaxes": {
+        "type": "array",
+        "default": [],
+        "items": {
+          "type": "string"
+        }
+      },
+      "coc.source.file.triggerCharacters": {
+        "type": "array",
+        "default": ["/"],
+        "items": {
+          "type": "string"
+        }
+      },
+      "coc.source.file.trimSameExts": {
+        "type": "array",
+        "default": [".ts", ".js"],
+        "description": "Trim same extension on file completion",
+        "items": {
+          "type": "string"
+        }
+      },
+      "coc.source.file.ignoreHidden": {
+        "type": "boolean",
+        "default": true,
+        "description": "Ignore completion for hidden files"
+      },
+      "coc.source.file.ignorePatterns": {
+        "type": "array",
+        "default": [],
+        "description": "Ignore patterns of matcher",
+        "items": {
+          "type": "string"
+        }
+      },
+      "languageserver": {
+        "type": "object",
+        "default": {},
+        "description": "Dictionary of languageservers, key is used as id of languageserver.",
+        "patternProperties": {
+          "^[_a-zA-Z]+$": {
+            "oneOf": [
+              {
+                "$ref": "#/definitions/languageServerModule"
+              },
+              {
+                "$ref": "#/definitions/languageServerCommand"
+              },
+              {
+                "$ref": "#/definitions/languageServerSocket"
+              }
+            ]
+          }
         }
       }
     }
   }
-}
