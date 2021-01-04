@@ -28,6 +28,7 @@
     alias lg="lazygit"
     alias gil="gh issue list"
     alias gi="gh issue view"
+    alias rev="git checkout HEAD^1"
 # ┌─────────────────────────┐
 # │        FRAMEWORKS       │
 # └─────────────────────────┘
