@@ -44,4 +44,4 @@
         autocmd VimEnter * inoremap <c-s> <Esc>:w<CR>
         " Map <C-L> (redraw screen) to also turn off search highlighting until the
         " next search
-        autocmd VimEnter * nnoremap <C-L> :nohl<CR>
+        "autocmd VimEnter * nnoremap <C-L> :nohl<CR>
