@@ -29,6 +29,7 @@
     alias gil="gh issue list"
     alias gi="gh issue view"
     alias rev="git checkout HEAD^1"
+    alias l="ls -1"
 # ┌─────────────────────────┐
 # │        FRAMEWORKS       │
 # └─────────────────────────┘
