@@ -14,3 +14,8 @@ wget https://raw.githubusercontent.com/cyadehn/.dotfiles/main/nvim/init.vim -O i
 wget https://raw.githubusercontent.com/cyadehn/.dotfiles/main/nvim/mapping.vim -O mapping.vim
 wget https://raw.githubusercontent.com/cyadehn/.dotfiles/main/nvim/plugin-settings.vim -O plugin-settings.vim
 ```
+
+### CS50 IDE
+```
+wget https://raw.githubusercontent.com/cyadehn/.dotfiles/main/.cs50IDE_profile -O .bash_profile
+```
